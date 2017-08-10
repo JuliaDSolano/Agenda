@@ -29,14 +29,14 @@
                     $_SESSION['usuario_senha']  = $senha;
                     $_SESSION['usuario_online'] = true;
 
-                    header('Location: _index.php'); //redirecionar um usuario
+                    header('Location: index.phtml'); //redirecionar um usuario
 
                 }
 
             }
 
             if($usuario_existe == false ){
-                header('Location: index.phtml');
+                header('Location: _index.php');
 
             }
         }
